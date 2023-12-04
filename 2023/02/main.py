@@ -61,7 +61,7 @@ def parseGame(gamestring: str) -> Game:
     for drawstring in gamestring[1].split(";"):
         draw = Draw(0, 0, 0, 0)
 
-        for single_draw in drawstring.rstrip().lstrip().split(", "):
+        for single_draw in drawstring.strip().split(", "):
             split = single_draw.split(" ")
             count = int(split[0])
             color = split[1]
