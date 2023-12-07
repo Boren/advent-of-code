@@ -2,8 +2,8 @@ import unittest
 from main import main
 
 
-class Test202303(unittest.TestCase):
-    def test_202303(self):
+class Test202304(unittest.TestCase):
+    def test_202304(self):
         result = main("sampleinput.txt")
 
         self.assertEqual(13, result[0])
